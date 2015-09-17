@@ -14,11 +14,13 @@
 					<%= link_to image_tag("logo.svg", alt: "Next Academy Overflow", width: "35px", height: "35px"), root_path %>
 				</li>
 				<li>
-					<%= link_to 'nextacademy', root_path, class: 'thin' %>
-					<%= link_to 'overflow', root_path, class: 'fat' %>
+					<%= link_to 'nextacademy', root_path, class: 'thin' %><%= link_to 'overflow', root_path, class: 'fat' %>
 				</li>
 				<li class="right">
-					<%= link_to "Login", login_static_page_path(:id) %>
+					<%= link_to 'Login', login_path %>
+				</li>
+				<li class="right">
+					<%= link_to 'Sign Up', signup_path %>
 				</li>
 			</ul>
 		</nav>

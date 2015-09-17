@@ -1,17 +1,24 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   get 'answers/answer_create'
 
   get 'questions/question_create'
 
-  get 'users/user_profile'
+  get 'signup', to: 'users#new'
 
   get 'users/user_edit'
 
   get 'static_pages/index'
 
+  get 'login', to: 'sessions#new'
+
+  resources :users
+  
+
   resources :static_pages do
     member do
-      get 'login'
+      # get 'login' # changed to using sessions
     end
   end
 

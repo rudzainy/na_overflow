@@ -39,32 +39,65 @@ nav li {
 	float: left;
 	vertical-align: middle;
 	margin: 0;
-	padding: 0 10px;
+	padding: 0 10px 0 0;
 }
 
 nav a {
 	text-decoration: none;
 	font-size: 20px;
+	color: #888;
+	font-weight: 100;
+}
+
+nav a:hover {
+	text-decoration: none;
+	font-size: 20px;
 	color: #333;
+	font-weight: 100;
 }
 
 .right {
 	position: relative;
 	float: right;
-	padding-top: 7px;
+	padding-top: 6px;
 	right: 0;
 }
 
 .logo {
 	padding: 0 5px 0 0 !important;
+	margin-top: -5px;
 }
 
-.thin {
-	font-weight: 100;
-	font-size: 20pt;
+.thin, .thin a, .thin a:hover {
+	font-weight: 100 !important;
+	font-size: 20pt !important;
+	text-decoration: none !important;
+	color: #000 !important;
 }
 
-.fat {
-	font-weight: 700;
-	font-size: 20pt;
+.fat, .fat a, .fat a:hover {
+	font-weight: 700 !important;
+	font-size: 20pt !important;
+	text-decoration: none !important;
+	color: #000 !important;
+}
+
+.form-container {
+	text-align: center;
+	margin: 0 auto;
+}
+
+input {
+	border-radius: .2rem;
+	border: 1px #ccc solid;
+	text-align: center;
+	line-height: 2;
+	width: 60%;
+}
+
+label, input {
+	position: relative;
+	float: left;
+	clear: both;
+	margin: 5px 0;
 }
