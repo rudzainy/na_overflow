@@ -16,7 +16,7 @@
  */
 
 #page-container {
-	width: 650px;
+	max-width: 850px;
 	margin: 0 auto;
 }
 
@@ -96,17 +96,28 @@ nav a:hover {
 	clear: both;
 }
 
-input {
+input, textarea {
 	border-radius: .2rem;
 	border: 1px #ccc solid;
-	text-align: center;
+	/*text-align: center;*/
 	line-height: 2;
 	width: 60%;
 }
 
-label, input {
+textarea {
+	width: 60%;
+	height: 200px;
+	resize: none;
+}
+
+label, input, textarea {
 	position: relative;
 	float: left;
 	clear: both;
 	margin: 5px 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
 }

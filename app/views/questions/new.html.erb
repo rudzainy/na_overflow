@@ -1,2 +1,14 @@
-<h1>Questions#question_create</h1>
-<p>Find me in app/views/questions/question_create.html.erb</p>
+<h1>Post New Question</h1>
+<div class="form-container">
+	<%= form_for(@question) do |f| %>
+
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+
+		<%= f.label :question %>
+		<%= text_area_tag :question %>
+
+		<%= f.submit 'Post Question', class: 'button' %>
+	<% end %>
+
+</div>

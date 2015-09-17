@@ -16,9 +16,12 @@
 				<li>
 					<%= link_to 'nextacademy', root_path, class: 'thin' %><%= link_to 'overflow', root_path, class: 'fat' %>
 				</li>
-				<% if logged_in? %>
 				<li class="right">
 					<%= link_to 'Log Out', logout_path, method: 'delete'%>
+				</li>
+				<% if logged_in? %>
+				<li class="right">
+					<%= link_to current_user.name, edit_user_path(current_user) %>
 				</li>
 				<% else %>
 				<li class="right">
