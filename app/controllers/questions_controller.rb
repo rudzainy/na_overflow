@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
-  def question_create
+  def new
+  	
   end
 end

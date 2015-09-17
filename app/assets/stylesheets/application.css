@@ -63,6 +63,12 @@ nav a:hover {
 	right: 0;
 }
 
+.left {
+	position: relative;
+	float: left;
+	padding: 0;
+}
+
 .logo {
 	padding: 0 5px 0 0 !important;
 	margin-top: -5px;
@@ -85,6 +91,9 @@ nav a:hover {
 .form-container {
 	text-align: center;
 	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	clear: both;
 }
 
 input {

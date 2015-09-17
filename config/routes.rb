@@ -1,26 +1,12 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
 
-  get 'answers/answer_create'
-
-  get 'questions/question_create'
-
-  get 'signup', to: 'users#new'
-
-  get 'users/user_edit'
-
-  get 'static_pages/index'
-
-  get 'login', to: 'sessions#new'
-
+  get    'signup', to: 'users#new'
+  get    'login',  to: 'sessions#new'
+  post   'login',  to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
   resources :users
-  
 
-  resources :static_pages do
-    member do
-      # get 'login' # changed to using sessions
-    end
-  end
+  get 'new_question', to: 'question#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
